@@ -20,19 +20,30 @@
     .encabezado {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
       flex-wrap: wrap;
     }
 
     .titulos {
       text-align: left;
+      flex: 1 1 300px;
     }
 
-    .direccion {
+    .ubicacion-y-horarios {
+      flex: 1 1 300px;
+      color: #ccc;
+      font-size: 14px;
+      text-align: left;
+      margin-top: 20px;
+      line-height: 1.4;
+    }
+
+    .contactos {
+      flex: 0 0 auto;
+      text-align: right;
       font-size: 14px;
       color: #ccc;
-      text-align: right;
-      margin-top: 10px;
+      white-space: pre-line; /* Para que los saltos de línea funcionen */
     }
 
     h1 {
@@ -112,9 +123,20 @@
         <h1>Catálogo de Baterías</h1>
         <h2>Baterías MW</h2>
       </div>
-      <div class="direccion">
-        📍 Esquina Hipólito Yrigoyen y Atilio Rebora  
+
+      <div class="contactos">
+        Contactos:<br>
+        03445-407939<br>
+        03445-432658
       </div>
+    </div>
+
+    <div class="ubicacion-y-horarios">
+      📍 Esquina Hipólito Yrigoyen y Atilio Rebora<br><br>
+
+      <strong>Horarios Atención:</strong><br>
+      Lunes - Viernes &rarr; 08:00 hs - 12:00 hs<br>
+      Sábados - Domingos &rarr; Solo urgencia.
     </div>
   </header>
 
