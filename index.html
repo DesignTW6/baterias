@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Baterías</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef1f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    h2 {
+      margin-top: 10px;
+      font-weight: normal;
+      font-size: 20px;
+      color: #ccc;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .bateria {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .bateria:hover {
+      transform: scale(1.03);
+    }
+
+    .bateria img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .info {
+      padding: 15px;
+    }
+
+    .nombre {
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 10px;
+      color: #2c3e50;
+    }
+
+    .descripcion {
+      font-size: 14px;
+      color: #555;
+      margin-top: 8px;
+    }
+
+    .precio {
+      font-size: 16px;
+      color: #27ae60;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    .garantia {
+      font-size: 13px;
+      color: #888;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Catálogo de Baterías</h1>
+    <h2>Baterías MW</h2>
+  </header>
+
+  <section class="galeria">
+
+    <div class="bateria">
+      <img src="imagenes/B_Champions.jpg" alt="Champions">
+      <div class="info">
+        <div class="nombre">Champions</div>
+        <div class="descripcion">Batería de alto rendimiento para autos medianos.</div>
+        <div class="precio">$1</div>
+        <div class="garantia">Garantía: 12 meses</div>
+      </div>
+    </div>
+
+    <div class="bateria">
+      <img src="imagenes/B_HardBat.jpg" alt="HardBat">
+      <div class="info">
+        <div class="nombre">HardBat</div>
+        <div class="descripcion">Ideal para SUV y vehículos exigentes.</div>
+        <div class="precio">$1</div>
+        <div class="garantia">Garantía: 18 meses</div>
+      </div>
+    </div>
+
+    <div class="bateria">
+      <img src="imagenes/B_Hi-Mart.jpg" alt="Hi-Mart">
+      <div class="info">
+        <div class="nombre">Hi-Mart</div>
+        <div class="descripcion">Compacta, ligera y de carga rápida.</div>
+        <div class="precio">$1</div>
+        <div class="garantia">Garantía: 12 meses</div>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>
