@@ -15,7 +15,24 @@
       background-color: #2c3e50;
       color: white;
       padding: 30px 20px;
-      text-align: center;
+    }
+
+    .encabezado {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .titulos {
+      text-align: left;
+    }
+
+    .direccion {
+      font-size: 14px;
+      color: #ccc;
+      text-align: right;
+      margin-top: 10px;
     }
 
     h1 {
@@ -51,10 +68,10 @@
     }
 
     .bateria img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
 
     .info {
       padding: 15px;
@@ -90,8 +107,15 @@
 <body>
 
   <header>
-    <h1>Catálogo de Baterías</h1>
-    <h2>Baterías MW</h2>
+    <div class="encabezado">
+      <div class="titulos">
+        <h1>Catálogo de Baterías</h1>
+        <h2>Baterías MW</h2>
+      </div>
+      <div class="direccion">
+        📍 Esquina Hipólito yrigoyen y Atilio Rebora  
+      </div>
+    </div>
   </header>
 
   <section class="galeria">
